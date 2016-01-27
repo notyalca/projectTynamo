@@ -1,0 +1,25 @@
+{
+  "name": "tynamo",
+  "version": "0.0.1",
+  "description": "REST server with dynamic routes & responses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notyalca/projectTynamo.git"
+  },
+  "keywords": [
+    "REST"
+  ],
+  "author": "Allen Clayton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/notyalca/projectTynamo/issues"
+  },
+  "homepage": "https://github.com/notyalca/projectTynamo#readme",
+  "dependencies": {
+    "hapi": "^12.1.0"
+  }
+}

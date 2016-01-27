@@ -1,0 +1,23 @@
+{
+  "routes":[
+    {
+      "path": "/test1",
+      "method": "GET",
+      "handler": {
+        "type": "text",
+        "message": "hello world",
+        "code": 404
+      }
+
+    },
+    {
+      "path": "/test2",
+      "method": "GET",
+      "handler": {
+        "type": "text",
+        "message": "world not found",
+        "code": 404
+      }
+    }
+  ]
+}
