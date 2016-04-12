@@ -22,6 +22,11 @@ server.route({
 	}
 });
 server.route({
+	method: 'GET',
+	path: '/admin/reload',
+	handler: routeHandler.reloadFromFile
+});
+server.route({
 	method: '*',
 	path: '/{dynamicSegment*}',
 	handler: routeHandler.handle
