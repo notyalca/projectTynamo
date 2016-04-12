@@ -35,11 +35,10 @@ Example routes file:
     
 ## Installation
 
-Clone this project. Use nodemon to watch and restart the server when the routes file changes
+Clone this project. Then run:
 
     npm install
-    npm install -g nodemon
 
-## Running the applicationAdd
+## Running the application
 
-    nodemon --watch ${yourConfigDirectory} app/server.js
+    node app.js
