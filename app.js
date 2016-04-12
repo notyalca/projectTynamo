@@ -2,8 +2,8 @@
  * Created by uclayal on 1/27/16.
  */
 'use strict';
-var RouteFinder = require('./lib/routes.js'),
-	routeFinder = new RouteFinder();
+var RouteHandler = require('./lib/dynamicRouteHandler.js'),
+	routeHandler = new RouteHandler('../routesExample/routes.json');
 const Hapi = require('hapi');
 
 const server = new Hapi.Server();
@@ -16,12 +16,17 @@ console.log(config.routeFile);
 
 server.route({
 	method: 'GET',
-	path: '/tynamoStatus',
+	path: '/admin/status',
 	handler: function (request, reply) {
 		reply('server up');
 	}
 });
-routeFinder.registerRoutes(server);
+server.route({
+	method: '*',
+	path: '/{dynamicSegment*}',
+	handler: routeHandler.handle
+});
+//routeFinder.registerRoutes(server);
 
 server.start(() => {
 	console.log('Server running at:', server.info.uri);
