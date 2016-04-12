@@ -1,5 +1,7 @@
 # projectTynamo
 
+[![Build Status](https://travis-ci.org/notyalca/projectTynamo.svg?branch=master)](https://travis-ci.org/notyalca/projectTynamo)
+
 ## Purpose
 
 Project Tynamo is intended to be a simple way to create a REST API with simple routes.
